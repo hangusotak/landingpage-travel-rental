@@ -1,0 +1,153 @@
+/* ===== 1. VARIABEL WARNA & UKURAN ===== */
+:root {
+  --navy: #0A2540;
+  --teal: #0E7C86;
+  --sun: #FFB703;
+  --ink: #1B2430;
+  --muted: #5B6676;
+  --bg: #FFFFFF;
+  --bg-alt: #EEF4F7;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(10, 37, 64, .10);
+}
+
+/* ===== 2. RESET & DASAR ===== */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body { margin: 0; font-family: 'Inter', sans-serif; color: var(--ink); background: var(--bg); line-height: 1.6; }
+img { max-width: 100%; height: auto; display: block; }
+h1, h2, h3 { font-family: 'Sora', sans-serif; line-height: 1.2; margin: 0 0 .5em; color: var(--navy); }
+a { color: inherit; }
+.container { width: min(1140px, 92%); margin-inline: auto; }
+.narrow { width: min(760px, 92%); }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 8px; top: 8px; background: #fff; padding: 8px 12px; z-index: 99; }
+:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+
+/* ===== 3. TOMBOL ===== */
+.btn { display: inline-block; background: var(--navy); color: #fff; padding: 12px 22px; border-radius: 999px; font-weight: 600; text-decoration: none; border: 2px solid var(--navy); cursor: pointer; font-family: inherit; font-size: 1rem; transition: transform .2s, background .2s; }
+.btn:hover { transform: translateY(-2px); background: var(--teal); border-color: var(--teal); }
+.btn-small { padding: 8px 16px; font-size: .9rem; }
+.btn-ghost { background: transparent; color: var(--navy); }
+.btn-ghost:hover { color: #fff; }
+.btn-full { width: 100%; background: var(--sun); border-color: var(--sun); color: var(--navy); }
+.btn-full:hover { background: var(--navy); border-color: var(--navy); color: #fff; }
+.btn-light { background: var(--sun); border-color: var(--sun); color: var(--navy); }
+
+/* ===== 4. HEADER & MENU ===== */
+.header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.92); backdrop-filter: blur(10px); transition: box-shadow .3s; }
+.header.scrolled { box-shadow: 0 4px 18px rgba(0,0,0,.08); }
+.nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+.logo { font-family: 'Sora', sans-serif; font-weight: 800; font-size: 1.4rem; text-decoration: none; color: var(--navy); }
+.logo span { color: var(--teal); }
+.menu { display: flex; align-items: center; gap: 26px; }
+.menu a { text-decoration: none; font-weight: 500; }
+.menu a:not(.btn):hover { color: var(--teal); }
+.menu .btn { color: #fff; }
+.menu-btn { display: none; background: none; border: 0; font-size: 1.7rem; cursor: pointer; color: var(--navy); }
+
+/* ===== 5. HERO ===== */
+.hero { padding: 64px 0 80px; background:
+  linear-gradient(120deg, rgba(10,37,64,.04), rgba(14,124,134,.10)),
+  url('https://picsum.photos/seed/hero-road/1600/900') center/cover; }
+.hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 48px; align-items: center; }
+.hero-text { background: rgba(255,255,255,.88); padding: 36px; border-radius: var(--radius); }
+.hero h1 { font-size: clamp(2rem, 4.6vw, 3.4rem); font-weight: 800; }
+.hero p { font-size: 1.1rem; color: var(--muted); max-width: 52ch; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin: 24px 0; }
+.stats { list-style: none; padding: 0; margin: 0; display: flex; gap: 28px; flex-wrap: wrap; color: var(--muted); font-size: .9rem; }
+.stats strong { display: block; font-family: 'Sora', sans-serif; font-size: 1.5rem; color: var(--navy); }
+
+/* ===== 6. FORMULIR PESAN ===== */
+.booking { background: #fff; padding: 28px; border-radius: var(--radius); box-shadow: var(--shadow); }
+.booking h2 { font-size: 1.3rem; }
+.booking label { display: block; font-size: .85rem; font-weight: 600; margin: 14px 0 6px; }
+.booking input, .booking select { width: 100%; padding: 11px 12px; border: 1.5px solid #CBD5DF; border-radius: 10px; font: inherit; }
+.booking input:focus, .booking select:focus { border-color: var(--teal); outline: none; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.booking .btn { margin-top: 20px; }
+.note { font-size: .8rem; color: var(--muted); margin: 10px 0 0; text-align: center; }
+
+/* ===== 7. SECTION UMUM ===== */
+.section { padding: 80px 0; }
+.alt { background: var(--bg-alt); }
+.title { font-size: clamp(1.6rem, 3vw, 2.3rem); max-width: 22ch; margin-bottom: 36px; }
+.grid { display: grid; gap: 24px; }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.card { background: #fff; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+
+/* ===== 8. LAYANAN ===== */
+.service img { aspect-ratio: 3/2; object-fit: cover; width: 100%; }
+.service h3, .service p { padding-inline: 18px; }
+.service h3 { margin-top: 16px; font-size: 1.1rem; }
+.service p { color: var(--muted); font-size: .92rem; padding-bottom: 18px; margin: 0; }
+
+/* ===== 9. ARMADA ===== */
+.filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px; }
+.chip { padding: 8px 18px; border-radius: 999px; border: 1.5px solid var(--navy); background: transparent; font: inherit; font-weight: 500; cursor: pointer; color: var(--navy); }
+.chip.active { background: var(--navy); color: #fff; }
+.car.hide { display: none; }
+.car img { aspect-ratio: 3/2; object-fit: cover; width: 100%; }
+.card-body { padding: 18px; }
+.card-body h3 { font-size: 1.15rem; margin-bottom: 4px; }
+.spec { color: var(--muted); font-size: .88rem; margin: 0 0 10px; }
+.price { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 1.3rem; color: var(--teal); margin: 0 0 14px; }
+.price small { font-family: 'Inter', sans-serif; font-weight: 400; color: var(--muted); font-size: .8rem; }
+
+/* ===== 10. DESTINASI ===== */
+.dest { position: relative; border-radius: var(--radius); overflow: hidden; aspect-ratio: 3/4; }
+.dest img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+.dest:hover img { transform: scale(1.05); }
+.dest-info { position: absolute; inset: auto 0 0 0; padding: 60px 22px 22px; color: #fff; background: linear-gradient(transparent, rgba(10,37,64,.92)); }
+.dest-info h3 { color: #fff; margin-bottom: 4px; }
+.dest-info p { margin: 0; font-size: .9rem; }
+
+/* ===== 11. KEUNGGULAN ===== */
+.navy { background: var(--navy); }
+.navy .title { color: #fff; }
+.why h3 { color: var(--sun); font-size: 1.1rem; }
+.why p { color: #C9D6E3; margin: 0; font-size: .95rem; }
+
+/* ===== 12. TESTIMONI ===== */
+.quote { margin: 0; padding: 26px; }
+.quote blockquote { margin: 0 0 18px; font-size: 1rem; }
+.quote figcaption { display: flex; align-items: center; gap: 12px; font-weight: 600; color: var(--navy); }
+.quote figcaption img { border-radius: 50%; width: 48px; height: 48px; object-fit: cover; }
+
+/* ===== 13. FAQ ===== */
+details { background: #fff; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+summary { font-weight: 600; cursor: pointer; color: var(--navy); }
+details p { margin: 10px 0 0; color: var(--muted); }
+
+/* ===== 14. CTA & FOOTER ===== */
+.cta { background: var(--teal); color: #fff; text-align: center; padding: 70px 0; }
+.cta h2 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); }
+.cta p { margin: 0 0 24px; }
+.footer { background: #071A2E; color: #C9D6E3; padding-top: 48px; }
+.footer .logo { color: #fff; }
+.foot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+address { font-style: normal; line-height: 1.9; }
+.copy { text-align: center; border-top: 1px solid rgba(255,255,255,.12); margin-top: 36px; padding: 18px; font-size: .85rem; }
+
+/* ===== 15. RESPONSIVE ===== */
+@media (max-width: 960px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 760px) {
+  .menu-btn { display: block; }
+  .menu { position: absolute; top: 68px; left: 0; right: 0; background: #fff; flex-direction: column; align-items: stretch; gap: 0; padding: 10px 4%; box-shadow: 0 12px 20px rgba(0,0,0,.08); display: none; }
+  .menu.open { display: flex; }
+  .menu a { padding: 12px 0; }
+  .menu .btn { text-align: center; margin-top: 8px; }
+  .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .section { padding: 56px 0; }
+  .hero-text { padding: 24px; }
+  .foot-grid { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
