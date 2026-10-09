@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===== SEO: MULAI ===== -->
+  <title>Jelajah Nusa | Rental Mobil & Paket Travel Surabaya</title>
+  <meta name="description" content="Sewa mobil dengan sopir atau lepas kunci, plus paket wisata Bromo, Ijen, dan Bali dari Surabaya. Harga transparan, armada terawat, pesan lewat WhatsApp.">
+  <meta name="keywords" content="rental mobil surabaya, sewa mobil, paket wisata bromo, paket travel bali, sewa mobil dengan sopir">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Jelajah Nusa">
+  <link rel="canonical" href="https://www.contoh-domain.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jelajah Nusa | Rental Mobil & Paket Travel Surabaya">
+  <meta property="og:description" content="Sewa mobil dan paket wisata dengan harga transparan. Pesan mudah lewat WhatsApp.">
+  <meta property="og:url" content="https://www.contoh-domain.com/">
+  <meta property="og:image" content="https://picsum.photos/seed/og-travel/1200/630">
+  <meta property="og:locale" content="id_ID">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0A2540">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRental",
+    "name": "Jelajah Nusa",
+    "image": "https://picsum.photos/seed/og-travel/1200/630",
+    "url": "https://www.contoh-domain.com/",
+    "telephone": "+6281234567890",
+    "priceRange": "Rp350.000 - Rp3.500.000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Contoh No. 10",
+      "addressLocality": "Surabaya",
+      "addressRegion": "Jawa Timur",
+      "addressCountry": "ID"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Apa saja syarat sewa mobil lepas kunci?",
+       "acceptedAnswer": {"@type": "Answer", "text": "KTP, SIM A aktif, dan deposit yang dikembalikan setelah mobil kembali."}},
+      {"@type": "Question", "name": "Apakah harga sudah termasuk BBM dan sopir?",
+       "acceptedAnswer": {"@type": "Answer", "text": "Paket dengan sopir sudah termasuk sopir. BBM, tol, dan parkir dihitung terpisah kecuali tertulis di paket."}},
+      {"@type": "Question", "name": "Bagaimana cara memesan?",
+       "acceptedAnswer": {"@type": "Answer", "text": "Isi formulir di halaman ini, lalu pesan akan terkirim ke WhatsApp kami untuk konfirmasi."}}
+    ]
+  }
+  </script>
+  <!-- ===== SEO: SELESAI ===== -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip" href="#main">Lewati ke konten</a>
+
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#beranda" class="logo">Jelajah<span>Nusa</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">☰</button>
+      <nav id="menu" class="menu" aria-label="Menu utama">
+        <a href="#layanan">Layanan</a>
+        <a href="#armada">Armada</a>
+        <a href="#destinasi">Destinasi</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#faq">FAQ</a>
+        <a href="#pesan" class="btn btn-small">Pesan sekarang</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Mobil siap, rute beres. Tinggal berangkat.</h1>
+          <p>Rental mobil dengan sopir atau lepas kunci, dan paket wisata Bromo, Ijen, sampai Bali. Harga jelas sebelum Anda jalan.</p>
+          <div class="hero-actions">
+            <a href="#armada" class="btn">Lihat armada</a>
+            <a href="#destinasi" class="btn btn-ghost">Lihat paket wisata</a>
+          </div>
+          <ul class="stats">
+            <li><strong>120+</strong> unit terawat</li>
+            <li><strong>8.500</strong> perjalanan selesai</li>
+            <li><strong>4,9/5</strong> rating pelanggan</li>
+          </ul>
+        </div>
+
+        <form class="booking" id="pesan" aria-labelledby="formTitle">
+          <h2 id="formTitle">Pesan lewat WhatsApp</h2>
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required>
+          <label for="layananPilih">Layanan</label>
+          <select id="layananPilih" name="layanan">
+            <option>Sewa mobil + sopir</option>
+            <option>Sewa mobil lepas kunci</option>
+            <option>Paket wisata</option>
+            <option>Antar jemput bandara</option>
+          </select>
+          <div class="row">
+            <div>
+              <label for="tanggal">Tanggal mulai</label>
+              <input type="date" id="tanggal" name="tanggal" required>
+            </div>
+            <div>
+              <label for="durasi">Durasi (hari)</label>
+              <input type="number" id="durasi" name="durasi" min="1" value="1" required>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-full">Kirim pesanan</button>
+          <p class="note">Anda akan diarahkan ke WhatsApp untuk konfirmasi.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- LAYANAN -->
+    <section class="section" id="layanan">
+      <div class="container">
+        <h2 class="title">Satu tempat untuk semua kebutuhan perjalanan</h2>
+        <div class="grid grid-4">
+          <article class="card service">
+            <img src="https://picsum.photos/seed/sopir/600/400" alt="Sopir profesional membukakan pintu mobil" loading="lazy" width="600" height="400">
+            <h3>Mobil + sopir</h3>
+            <p>Sopir berpengalaman yang hafal rute. Cocok untuk keluarga dan perjalanan bisnis.</p>
+          </article>
+          <article class="card service">
+            <img src="https://picsum.photos/seed/kunci/600/400" alt="Kunci mobil untuk sewa lepas kunci" loading="lazy" width="600" height="400">
+            <h3>Lepas kunci</h3>
+            <p>Bawa sendiri, atur sendiri. Syarat mudah dan proses serah terima cepat.</p>
+          </article>
+          <article class="card service">
+            <img src="https://picsum.photos/seed/wisata/600/400" alt="Rombongan wisata di pegunungan" loading="lazy" width="600" height="400">
+            <h3>Paket wisata</h3>
+            <p>Rute sudah disusun lengkap dengan mobil, sopir, dan tiket masuk pilihan.</p>
+          </article>
+          <article class="card service">
+            <img src="https://picsum.photos/seed/bandara/600/400" alt="Mobil menunggu di area kedatangan bandara" loading="lazy" width="600" height="400">
+            <h3>Antar jemput bandara</h3>
+            <p>Dijemput tepat waktu, bahkan saat pesawat Anda terlambat.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARMADA -->
+    <section class="section alt" id="armada">
+      <div class="container">
+        <h2 class="title">Pilih mobil sesuai jumlah penumpang</h2>
+        <div class="filters" role="group" aria-label="Filter armada">
+          <button class="chip active" data-filter="all">Semua</button>
+          <button class="chip" data-filter="city">City car</button>
+          <button class="chip" data-filter="family">Keluarga</button>
+          <button class="chip" data-filter="group">Rombongan</button>
+        </div>
+        <div class="grid grid-3" id="fleet">
+          <article class="card car" data-type="city">
+            <img src="https://picsum.photos/seed/brio/700/460" alt="Honda Brio warna putih" loading="lazy" width="700" height="460">
+            <div class="card-body">
+              <h3>Honda Brio</h3>
+              <p class="spec">4 penumpang • Manual • 2 koper</p>
+              <p class="price">Rp350.000 <small>/ hari</small></p>
+              <a href="#pesan" class="btn btn-small">Pesan mobil ini</a>
+            </div>
+          </article>
+          <article class="card car" data-type="family">
+            <img src="https://picsum.photos/seed/innova/700/460" alt="Toyota Innova Reborn warna hitam" loading="lazy" width="700" height="460">
+            <div class="card-body">
+              <h3>Toyota Innova Reborn</h3>
+              <p class="spec">7 penumpang • Otomatis • 4 koper</p>
+              <p class="price">Rp700.000 <small>/ hari</small></p>
+              <a href="#pesan" class="btn btn-small">Pesan mobil ini</a>
+            </div>
+          </article>
+          <article class="card car" data-type="family">
+            <img src="https://picsum.photos/seed/xpander/700/460" alt="Mitsubishi Xpander warna abu-abu" loading="lazy" width="700" height="460">
+            <div class="card-body">
+              <h3>Mitsubishi Xpander</h3>
+              <p class="spec">7 penumpang • Otomatis • 3 koper</p>
+              <p class="price">Rp600.000 <small>/ hari</small></p>
+              <a href="#pesan" class="btn btn-small">Pesan mobil ini</a>
+            </div>
+          </article>
+          <article class="card car" data-type="group">
+            <img src="https://picsum.photos/seed/hiace/700/460" alt="Toyota Hiace warna putih" loading="lazy" width="700" height="460">
+            <div class="card-body">
+              <h3>Toyota Hiace</h3>
+              <p class="spec">14 penumpang • Manual • bagasi luas</p>
+              <p class="price">Rp1.400.000 <small>/ hari</small></p>
+              <a href="#pesan" class="btn btn-small">Pesan mobil ini</a>
+            </div>
+          </article>
+          <article class="card car" data-type="city">
+            <img src="https://picsum.photos/seed/agya/700/460" alt="Toyota Agya warna merah" loading="lazy" width="700" height="460">
+            <div class="card-body">
+              <h3>Toyota Agya</h3>
+              <p class="spec">4 penumpang • Otomatis • 2 koper</p>
+              <p class="price">Rp330.000 <small>/ hari</small></p>
+              <a href="#pesan" class="btn btn-small">Pesan mobil ini</a>
+            </div>
+          </article>
+          <article class="card car" data-type="group">
+            <img src="https://picsum.photos/seed/elf/700/460" alt="Isuzu Elf untuk rombongan" loading="lazy" width="700" height="460">
+            <div class="card-body">
+              <h3>Isuzu Elf Long</h3>
+              <p class="spec">19 penumpang • Manual • bagasi luas</p>
+              <p class="price">Rp1.800.000 <small>/ hari</small></p>
+              <a href="#pesan" class="btn btn-small">Pesan mobil ini</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINASI -->
+    <section class="section" id="destinasi">
+      <div class="container">
+        <h2 class="title">Paket wisata paling dicari</h2>
+        <div class="grid grid-3">
+          <article class="dest">
+            <img src="https://picsum.photos/seed/bromo/700/900" alt="Matahari terbit di Gunung Bromo" loading="lazy" width="700" height="900">
+            <div class="dest-info">
+              <h3>Bromo Sunrise</h3>
+              <p>2 hari 1 malam • mulai Rp1.250.000 / mobil</p>
+            </div>
+          </article>
+          <article class="dest">
+            <img src="https://picsum.photos/seed/ijen/700/900" alt="Kawah Ijen dengan danau berwarna toska" loading="lazy" width="700" height="900">
+            <div class="dest-info">
+              <h3>Kawah Ijen</h3>
+              <p>2 hari 1 malam • mulai Rp1.650.000 / mobil</p>
+            </div>
+          </article>
+          <article class="dest">
+            <img src="https://picsum.photos/seed/bali/700/900" alt="Pantai berpasir putih di Bali" loading="lazy" width="700" height="900">
+            <div class="dest-info">
+              <h3>Surabaya – Bali</h3>
+              <p>4 hari 3 malam • mulai Rp3.500.000 / mobil</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- KENAPA KAMI -->
+    <section class="section navy" id="keunggulan">
+      <div class="container">
+        <h2 class="title">Kenapa pelanggan kembali lagi</h2>
+        <div class="grid grid-4">
+          <div class="why"><h3>Harga transparan</h3><p>Tidak ada biaya tersembunyi. Semua tertulis sebelum Anda bayar.</p></div>
+          <div class="why"><h3>Armada diservis rutin</h3><p>Setiap unit dicek sebelum dan sesudah dipakai.</p></div>
+          <div class="why"><h3>Layanan 24 jam</h3><p>Ban bocor atau tersesat? Tim kami siap dihubungi kapan saja.</p></div>
+          <div class="why"><h3>Pembayaran fleksibel</h3><p>Transfer bank, QRIS, atau tunai saat serah terima.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section class="section" id="testimoni">
+      <div class="container">
+        <h2 class="title">Cerita dari para pelanggan</h2>
+        <div class="grid grid-3">
+          <figure class="card quote">
+            <blockquote>Mobil bersih, sopir ramah dan tahu spot foto terbaik di Bromo. Keluarga kami puas.</blockquote>
+            <figcaption><img src="https://picsum.photos/seed/user1/80/80" alt="Foto Rina" loading="lazy" width="48" height="48"> Rina, Malang</figcaption>
+          </figure>
+          <figure class="card quote">
+            <blockquote>Proses pesan cepat lewat WhatsApp. Mobil datang tepat waktu di bandara.</blockquote>
+            <figcaption><img src="https://picsum.photos/seed/user2/80/80" alt="Foto Dimas" loading="lazy" width="48" height="48"> Dimas, Jakarta</figcaption>
+          </figure>
+          <figure class="card quote">
+            <blockquote>Harga sesuai kesepakatan dari awal. Untuk rombongan kantor, Hiace-nya nyaman.</blockquote>
+            <figcaption><img src="https://picsum.photos/seed/user3/80/80" alt="Foto Sari" loading="lazy" width="48" height="48"> Sari, Surabaya</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section alt" id="faq">
+      <div class="container narrow">
+        <h2 class="title">Pertanyaan yang sering diajukan</h2>
+        <details>
+          <summary>Apa saja syarat sewa mobil lepas kunci?</summary>
+          <p>KTP, SIM A aktif, dan deposit yang dikembalikan setelah mobil kembali.</p>
+        </details>
+        <details>
+          <summary>Apakah harga sudah termasuk BBM dan sopir?</summary>
+          <p>Paket dengan sopir sudah termasuk sopir. BBM, tol, dan parkir dihitung terpisah kecuali tertulis di paket.</p>
+        </details>
+        <details>
+          <summary>Bagaimana cara memesan?</summary>
+          <p>Isi formulir di bagian atas halaman, lalu pesan akan terkirim ke WhatsApp kami untuk konfirmasi.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container">
+        <h2>Siap berangkat akhir pekan ini?</h2>
+        <p>Hubungi kami dan dapatkan penawaran dalam 15 menit.</p>
+        <a href="https://wa.me/6281234567890" class="btn btn-light">Chat WhatsApp</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container foot-grid">
+      <div>
+        <a href="#beranda" class="logo">Jelajah<span>Nusa</span></a>
+        <p>Rental mobil dan paket travel dari Surabaya untuk seluruh Jawa dan Bali.</p>
+      </div>
+      <address>
+        Jl. Contoh No. 10, Surabaya<br>
+        <a href="tel:+6281234567890">0812-3456-7890</a><br>
+        <a href="mailto:halo@contoh-domain.com">halo@contoh-domain.com</a>
+      </address>
+    </div>
+    <p class="copy">© <span id="year">2026</span> Jelajah Nusa. Semua hak dilindungi.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
