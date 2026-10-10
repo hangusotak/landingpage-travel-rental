@@ -47,26 +47,30 @@ a { color: inherit; }
 .menu-btn { display: none; background: none; border: 0; font-size: 1.7rem; cursor: pointer; color: var(--navy); }
 
 /* ===== 5. HERO ===== */
-.hero { padding: 64px 0 80px; background:
-  linear-gradient(120deg, rgba(10,37,64,.04), rgba(14,124,134,.10)),
+.hero { padding: 80px 0 90px; background:
+  linear-gradient(100deg, rgba(10,37,64,.88) 0%, rgba(10,37,64,.55) 55%, rgba(10,37,64,.25) 100%),
   url('https://picsum.photos/seed/hero-road/1600/900') center/cover; }
 .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 48px; align-items: center; }
-.hero-text { background: rgba(255,255,255,.88); padding: 36px; border-radius: var(--radius); }
-.hero h1 { font-size: clamp(2rem, 4.6vw, 3.4rem); font-weight: 800; }
-.hero p { font-size: 1.1rem; color: var(--muted); max-width: 52ch; }
+.hero-text { padding: 0; }
+.hero h1 { font-size: clamp(2rem, 4.6vw, 3.4rem); font-weight: 800; color: #fff; }
+.hero p { font-size: 1.1rem; color: #DCE6F0; max-width: 52ch; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin: 24px 0; }
-.stats { list-style: none; padding: 0; margin: 0; display: flex; gap: 28px; flex-wrap: wrap; color: var(--muted); font-size: .9rem; }
-.stats strong { display: block; font-family: 'Sora', sans-serif; font-size: 1.5rem; color: var(--navy); }
+.hero-actions .btn { background: var(--sun); border-color: var(--sun); color: var(--navy); }
+.hero-actions .btn:hover { background: #fff; border-color: #fff; }
+.hero-actions .btn-ghost { background: transparent; color: #fff; border-color: #fff; }
+.hero-actions .btn-ghost:hover { background: #fff; color: var(--navy); }
+.stats { list-style: none; padding: 0; margin: 0; display: flex; gap: 28px; flex-wrap: wrap; color: #C9D6E3; font-size: .9rem; }
+.stats strong { display: block; font-family: 'Sora', sans-serif; font-size: 1.5rem; color: var(--sun); }
 
 /* ===== 6. FORMULIR PESAN ===== */
-.booking { background: #fff; padding: 28px; border-radius: var(--radius); box-shadow: var(--shadow); }
+.booking { background: #fff; padding: 28px; border-radius: var(--radius); box-shadow: 0 20px 50px rgba(0,0,0,.25); display: flex; flex-direction: column; justify-content: center; }
 .booking h2 { font-size: 1.3rem; }
 .booking label { display: block; font-size: .85rem; font-weight: 600; margin: 14px 0 6px; }
 .booking input, .booking select { width: 100%; padding: 11px 12px; border: 1.5px solid #CBD5DF; border-radius: 10px; font: inherit; }
 .booking input:focus, .booking select:focus { border-color: var(--teal); outline: none; }
 .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .booking .btn { margin-top: 20px; }
-.note { font-size: .8rem; color: var(--muted); margin: 10px 0 0; text-align: center; }
+.note { font-size: .8rem; color: var(--muted); margin: 14px 0 0; text-align: center; }
 
 /* ===== 7. SECTION UMUM ===== */
 .section { padding: 80px 0; }
@@ -144,7 +148,6 @@ address { font-style: normal; line-height: 1.9; }
   .menu .btn { text-align: center; margin-top: 8px; }
   .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .section { padding: 56px 0; }
-  .hero-text { padding: 24px; }
   .foot-grid { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) {
